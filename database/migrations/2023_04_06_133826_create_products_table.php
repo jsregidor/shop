@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->float("price");
             $table->string("img");
             $table->timestamps();
+            
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
         });
 

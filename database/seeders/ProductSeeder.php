@@ -14,13 +14,11 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        Product::create(
-            [
-                'user_id' => 1,
-                'product_name' => "Classic Denim",
-                'price' => 499.57,
-                'img' => 'fab.png'
-            ]
-        );
+        Product::create([
+            'user_id' => 1,
+            'product_name' => "Classic Denim",
+            'price' => 499.57,
+            'img' => 'fab.png'
+        ]);
     }
 }
